@@ -8,8 +8,7 @@ public class TestRegularExpression {
 			System.out.println("Usage:\n regex + pattern");
 			System.exit(0);
 		}
-		for(String arg: args) {
-			
+		for(String arg: args) {	
 			Pattern p = Pattern.compile(arg);
 			Matcher m = p.matcher(args[0]);
 			while(m.find()) {
